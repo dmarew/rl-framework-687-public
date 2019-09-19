@@ -2,11 +2,11 @@ from abc import ABC, abstractmethod
 
 class Environment(ABC):
     """
-    A reinforcement learning environment. 
-    
-    The Environment defines everything outside of the Agent, including 
+    A reinforcement learning environment.
+
+    The Environment defines everything outside of the Agent, including
     the states, actions, transitions between states, and rewards. In general,
-    an agent's goal is to maximize the reward signal received from the 
+    an agent's goal is to maximize the reward signal received from the
     environment.
 
     """
@@ -64,7 +64,7 @@ class Environment(ABC):
         An action is taken in the environment and the next
         state is entered.
 
-        output: 
+        output:
             state -- the next state
             reward -- the reward from taking the action
             isEnd -- True if environment reset is required
@@ -77,6 +77,3 @@ class Environment(ABC):
         The environment is reset.
         """
         pass
-
-
-
